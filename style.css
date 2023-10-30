@@ -5,14 +5,9 @@ body {
     font-weight: 400;
     font-style: italic;
 }
-
-.container {
-    background-color: white;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px; 
-    box-shadow: 10px;
-    border-radius: 10px;
+h2{
+    margin: 0 0 5px;
+    font-size: 34px;
 }
 select {
     display: block;
@@ -20,22 +15,36 @@ select {
     border-radius: 5x;
     padding: 10px;
 }
-.cities {
+footer {
+   font-size: 14px;
+   font-family: marigny, sans-serif;
+   color: rgb(67, 62, 62);
+}
+.container {
+    background-color: white;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px; 
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.city {
     font-size: 24px;
     display: flex;
     justify-content: space-between;
+    padding: 20px  0;
+    border-bottom: 1 px dashed rgba(0, 0, 0, 0.2);
 }
-.cities h2 {
-    margin:0;
 
-}
 .date{
     opacity: 0.7;
     font-size: 16px;
     text-align: left;
 }
 .time {
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: 600;
 
 }
 .time small {
