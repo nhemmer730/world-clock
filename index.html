@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/dbv5eym.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
 </head>
 <body>
@@ -13,24 +15,24 @@
 
     <select>
         <option value="">Select a city</option>
-        <option value=""> Paris</option>
-        <option value=""> Florence</option>
         <option value="">San Francisco</option>
+        <option value=""> Rome</option>
+        <option value=""> Sydney</option>
     </select>
 
-    <div class="city">
+    <div class="city" id="boston">
         <div>
         <h2>Boston 🇺🇸</h2>
-        <div class="date">October 30, 2023</div>
+        <div class="date"></div>
         </div>
-        <div class="time">12:00:00<small> AM</small></div>
+        <div class="time"></div>
     </div>
-       <div class="city">
+       <div class="city" id="dublin">
         <div>
         <h2>Dublin 🇮🇪</h2>
-        <div class="date">October 30, 2023</div>
+        <div class="date"></div>
         </div>
-        <div class="time">12:00:00<small> AM</small></div>
+        <div class="time"></div>
     </div>
 </div>
 <footer>This project was coded by Nicole Hemmer and <a href="https://github.com/nhemmer730/world-clock" target="_blank">open sourced on Github.</a></footer>
