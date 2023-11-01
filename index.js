@@ -1,12 +1,12 @@
 function updateTime() {
-    let bostonElement = document.querySelector("#boston");
-    if (bostonElement) {
-        let bostonDateElement = bostonElement.querySelector(".date");
-        let bostonTimeElement = bostonElement.querySelector(".time");
-        let bostonTime = moment().tz("America/New_York");
+    let vilniusElement = document.querySelector("#prague");
+    if (pragueElement) {
+        let vilniusDateElement = vilniusElement.querySelector(".date");
+        let vilniusTimeElement = vilniusElement.querySelector(".time");
+        let vilniusTime = moment().tz("Europe/Vilnius");
         
-        bostonDateElement.innerHTML = moment().format("MMMM Do YYYY");
-        bostonTimeElement.innerHTML = bostonTime.format("h:mm:ss [<small>] A[</small>]");
+     vilniusDateElement.innerHTML = moment().format("MMMM Do YYYY");
+     vilniusTimeElement.innerHTML = vilniusTime.format("h:mm:ss [<small>] A[</small>]");
     }
 
     let dublinElement = document.querySelector("#dublin");
@@ -21,6 +21,9 @@ function updateTime() {
 
 function updateCity(event) { 
   let cityTimeZone = event.target.value;
+  if (cityTimeZone  ===  "current") {
+    cityTimeZone = moment().tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
     let cititesElement = document.querySelector("#cities");
